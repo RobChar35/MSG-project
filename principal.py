@@ -1,9 +1,10 @@
 import random
 
-#Java function
-def java_or_bedrock(limit):
-    symbol = " -"
+#Java and bedrock function
+def java_or_bedrock(limit, start, end):
+    symbols = random.choice(" -")
+    print(symbols, end="")
     for i in range(limit):
-        print(9, end="")    
-    print(random.choice(symbol), random.randint(10000, 9999999999999999999), end="")
-java_or_bedrock(10)
+        random_number = random.randint(start, end)
+        print(random_number, end="")
+java_or_bedrock(19, 1, 9)
