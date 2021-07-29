@@ -21,8 +21,8 @@ def selection():
 
 #Random values in java_or_bedrock function
 def get_lucky():
-    limit_gl = random.randint(5, 19)
-    start_gl = random.randint(0, 9)
-    end_gl = random.randint(0, 9)
+    limit_gl = random.randrange(5, 19, 1)
+    start_gl = random.randrange(0, 9, 1)
+    end_gl = random.randrange(0, 9, 1)
     java_or_bedrock(limit_gl, start_gl, end_gl)
 get_lucky()
