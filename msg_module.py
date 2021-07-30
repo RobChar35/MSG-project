@@ -25,4 +25,3 @@ def get_lucky():
     start_gl = random.randrange(0, 9, 1)
     end_gl = random.randrange(0, 9, 1)
     java_or_bedrock(limit_gl, start_gl, end_gl)
-get_lucky()
