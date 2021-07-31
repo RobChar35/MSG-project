@@ -1,10 +1,17 @@
 from msg_module import *
 
 #Simple menu
-option = str(input("Write something: "))
-if option == "Customize":
+print("""
+        Welcome to Minecraft Seed Generator!
+    ============================================
+    These are the options:
+    - Customized.
+    - Random.
+""")
+option = str(input("Just write one of them: "))
+if option == "customized" or option == "Customized":
     selection()
-elif option == "random":
+elif option == "random" or option == "Random":
     get_lucky()
 else:
-    print("Error.")
+    print("You need to write 'customized' or 'random' to get a result.")
